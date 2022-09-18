@@ -48,6 +48,7 @@ body {
     border-radius: 40px;
     border: solid #8a9397 ;
     box-shadow: -6px 10px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #8A9397;
 }
 #btnSimpan:hover{
     cursor: pointer;
@@ -90,6 +91,9 @@ body {
     margin-bottom: -30px;
     box-sizing: border-box;
     padding: 15px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    
 }
 
 
@@ -101,6 +105,7 @@ body {
     box-sizing: border-box;
     padding-top: 10px;
     padding-left: 10px;
+    border-left: 20px solid #8a9397;
 }
 .color-icon {
     color: white;
@@ -108,10 +113,12 @@ body {
 
 .hijau{
     background: #A3FD9C;
+    border-left: 20px solid #76D2E5;
 }
 
 .coklat {
     background: #FFDBA4;
+    border-left: 20px solid #C98474;
 }
 
 
@@ -121,7 +128,7 @@ body {
     align-items: center;
     justify-content: center;
     /* margin-left:78vmax; */
-    margin-left: 46.5%;
+    margin-left: 45%;
     margin-top: -30px;
     background: red;
     color: white;
