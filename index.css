@@ -93,6 +93,7 @@ body {
     padding: 15px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
+    box-shadow: -6px 15px 10px rgba(0, 0, 0, 0.7);
     
 }
 
@@ -106,6 +107,7 @@ body {
     padding-top: 10px;
     padding-left: 10px;
     border-left: 20px solid #8a9397;
+    box-shadow: -6px 15px 10px rgba(0, 0, 0, 0.7);
 }
 .color-icon {
     color: white;
