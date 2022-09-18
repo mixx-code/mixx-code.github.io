@@ -9,15 +9,22 @@ const btnSimpan = document.querySelector("#btnSimpan");
 let dailyTask = [];
 const render = (item, i) => {
     return `
-        <div class="title">
-        <p>${item.title}</p>
+        <div id=${i+1} class="title">
+        
+        ${item.title}
         </div>
-        <div class="card">
+        <div id="${i+1}" class="card">
             <span id="${i}" class="hapus">X</span>   
             <p>${item.date}</p>
             <p>${item.agenda}</p>
         </div>
     `
+}
+const kosong = () => {
+    return`
+        <p class="kosong">Daily Task Kosong</p>
+    `
+
 }
 const addDailyTask = (item, i) => {
         hasil.innerHTML += render(item, i)
@@ -39,6 +46,7 @@ const hapusData = (id) =>{
         });
     }else {
         hasil.innerHTML += kosong()
+        console.log(kosong())
     }
 
     title.value= "",
@@ -48,12 +56,7 @@ const hapusData = (id) =>{
 }
 
 
-const kosong = () => {
-    return`
-        <p class="kosong">Daily Task Kosong</p>
-    `
 
-}
 
 btnSimpan.addEventListener('click', () => {
         dailyTask.push({
@@ -71,6 +74,7 @@ btnSimpan.addEventListener('click', () => {
         agenda.value,
         idDailyTask = i
     )
+    console.log(idDailyTask = i)
 
     title.value= "",
     date.value= "",
@@ -87,6 +91,7 @@ if(localStorage.getItem("dailyTask")){
     });
 }else {
     hasil.innerHTML += kosong()
+    console.log(kosong)
 }
 const hapusBtn = document.getElementsByClassName('hapus');
 for(var i = 0; i < hapusBtn.length; i++) {
@@ -96,3 +101,29 @@ for(var i = 0; i < hapusBtn.length; i++) {
      })
   })(i);
 }
+const card = document.getElementsByClassName('card');
+const judulDaily = document.getElementsByClassName('title');
+for (let i = 0; i < card.length; i++){
+    const idCard = card[i];
+    console.log('card ==> ',idCard);
+    if(idCard.id % 2 != 0){
+        idCard.classList.add('hijau');
+        
+    }else{
+        idCard.classList.add('coklat');
+    }
+    
+}
+for (let i = 0; i < judulDaily.length; i++){
+    const idJudul = judulDaily[i];
+    console.log('card ==> ',idJudul);
+    if(idJudul.id % 2 != 0){
+        idJudul.classList.add('hijau');
+        
+    }else{
+        idJudul.classList.add('coklat');
+
+    }
+    
+}
+
