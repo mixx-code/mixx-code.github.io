@@ -184,6 +184,17 @@ body {
         height: 40px;
         border-radius: 50%;
     }
+    .card{
+        margin: 50px;
+        width: 75%;
+        min-height: 150px;
+        border-bottom-right-radius: 50px;
+        box-sizing: border-box;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-left: 20px solid #8a9397;
+        box-shadow: -6px 15px 10px rgba(0, 0, 0, 0.7);
+    }
 }
 @media screen and (max-width: 600px) {
     body {
