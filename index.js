@@ -6,6 +6,7 @@ const agenda = document.querySelector("#agenda");
 const hasil = document.querySelector("#hasil");
 const btnSimpan = document.querySelector("#btnSimpan");
 
+
 let dailyTask = [];
 const render = (item, i) => {
     return `
@@ -105,7 +106,7 @@ const card = document.getElementsByClassName('card');
 const judulDaily = document.getElementsByClassName('title');
 for (let i = 0; i < card.length; i++){
     const idCard = card[i];
-    console.log('card ==> ',idCard);
+    // console.log('card ==> ',idCard);
     if(idCard.id % 2 != 0){
         idCard.classList.add('hijau');
         
@@ -116,7 +117,7 @@ for (let i = 0; i < card.length; i++){
 }
 for (let i = 0; i < judulDaily.length; i++){
     const idJudul = judulDaily[i];
-    console.log('card ==> ',idJudul);
+    // console.log('card ==> ',idJudul);
     if(idJudul.id % 2 != 0){
         idJudul.classList.add('hijau');
         
@@ -126,4 +127,5 @@ for (let i = 0; i < judulDaily.length; i++){
     }
     
 }
+
 

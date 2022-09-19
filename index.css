@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    background-color: #c5c5c5;
+    /* background-color: #c5c5c5; */
+    background-image: url(./asset/bg.jpg);
+    background-repeat: repeat;
 }
 #container {
     display: flex;
@@ -67,7 +69,18 @@ body {
     /* box-shadow: 0 -20px 20px rgba(30, 0, 78, 0.4); */
     
 }
-
+.garis{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: white;
+    margin: 10px auto;
+    transition: 2s;
+}
+.garis:hover{
+    transform: scaleY(2);
+    cursor: pointer;
+}
 #judul {
     display: block;
     width: 250px;
