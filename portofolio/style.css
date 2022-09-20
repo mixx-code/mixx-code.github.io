@@ -76,11 +76,13 @@ a {
 .deskripsi {
     display: flex;
     width: 70%;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
 
 }
 .desk {
-    width: 500px;
+    width: 400px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -103,7 +105,9 @@ a {
 .wrapp {
     display: flex;
     margin-top: 50px;
-    width: 70%;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
 }
 .ig {
@@ -148,4 +152,9 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    margin: 25px;
+}
+
+@media screen and (max-width: 1260px) {
+
 }
