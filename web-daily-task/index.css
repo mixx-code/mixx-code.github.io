@@ -176,13 +176,23 @@ body {
         align-items: center;
         justify-content: center;
         /* margin-left:78vmax; */
-        margin-left: 75%;
+        margin-left: 70%;
         margin-top: -30px;
         background: red;
         color: white;
         width: 40px;
         height: 40px;
         border-radius: 50%;
+    }
+    #judul {
+        display: block;
+        width: 250px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     .card{
         margin: 50px;
@@ -223,5 +233,15 @@ body {
         width: 40px;
         height: 40px;
         border-radius: 50%;
+    }
+    #judul {
+        display: block;
+        width: 250px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 }
