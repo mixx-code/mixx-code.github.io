@@ -111,6 +111,7 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    height: 700px;
 }
 .ig {
     
