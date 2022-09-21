@@ -4,6 +4,12 @@ html {
 body {
     margin: 0;
 }
+
+.container {
+    display: block;
+    width: 100%;
+}
+
 li {
     list-style-type: none;
     margin-right: 50px;
@@ -13,12 +19,6 @@ a {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-
-.container {
-    display: block;
-    width: 100%;
-}
-
 .navigasi {
     display: flex;
     width: 100%;
@@ -70,7 +70,7 @@ a {
 }
 .about-me{
     font-family: 'Roboto', sans-serif;
-    margin: 50px auto;
+    margin: 100px auto;
     color: white;
 }
 .deskripsi {
