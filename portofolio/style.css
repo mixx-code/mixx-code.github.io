@@ -77,7 +77,6 @@ a {
     display: flex;
     width: 70%;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
 
 }
@@ -104,14 +103,14 @@ a {
     margin: 50px auto;
     color: white;
 }
-.wrapp {
+.wrap {
     display: flex;
     margin-top: 50px;
     width: 80%;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    height: 700px;
+    height: 500px;
 }
 .ig {
     
