@@ -39,7 +39,9 @@ a {
     background: linear-gradient(#533483, #0F3460);
     height: 900px;
 }
-img {
+.photo {
+    width: 200px;
+    height: 200px;
     margin: 150px auto;
     border-radius: 50%;
 }
@@ -96,11 +98,11 @@ img {
     align-items: center;
     flex-wrap: wrap;
     background: #16213E;
-    height: 1000;
+    height: 1200px;
 }
 .contact-me{
     font-family: 'Roboto', sans-serif;
-    margin: 50px auto;
+    margin: 100px auto;
     color: white;
 }
 .wrap {
