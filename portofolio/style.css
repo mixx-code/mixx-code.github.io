@@ -39,7 +39,7 @@ a {
     background: linear-gradient(#533483, #0F3460);
     height: 900px;
 }
-.photo {
+img {
     margin: 150px auto;
     border-radius: 50%;
 }
