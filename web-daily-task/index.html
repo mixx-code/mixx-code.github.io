@@ -12,9 +12,9 @@
     <div id="container">
         <div class="gradient"></div>
         <div id="input">
-            <input type="text" id="title" placeholder="Title">
-            <input type="date" id="date" placeholder="Date">
-            <textarea name="" id="agenda" itemid="agenda" cols="30" rows="10"></textarea>
+            <input type="text" id="title" placeholder="Title" required maxlength="30" minlength="3">
+            <input type="date" id="date" placeholder="Date" required  minlength="3">
+            <textarea name="" id="agenda" itemid="agenda" cols="30" rows="10" required maxlength="40" minlength="3" ></textarea>
             <button id="btnSimpan">Simpan</button>
         </div>
         <div id="hasil">

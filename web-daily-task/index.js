@@ -6,6 +6,13 @@ const agenda = document.querySelector("#agenda");
 const hasil = document.querySelector("#hasil");
 const btnSimpan = document.querySelector("#btnSimpan");
 
+// const validasi = () => {
+//     if(title != "" && date != "" && agenda !=""){
+//         return true
+//     }else{
+//         alert('mohon masukkan data dengan benar!!')
+//     }
+// }
 
 let dailyTask = [];
 const render = (item, i) => {
@@ -128,4 +135,14 @@ for (let i = 0; i < judulDaily.length; i++){
     
 }
 
+// Store the data with time
+const EXPIRE_TIME = 1000*60*60;
+localStorage.setItem('dailyTask', JSON.stringify(dailyTask));
+
+// start the time out
+
+setTimeout(function() {
+    localStorage.removeItem('dailyTask');   
+    location.reload();
+}, EXPIRE_TIME); // after an hour it will delete the data
 
