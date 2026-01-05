@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #1e40af;
+    object-fit: cover;
+}
+
+.code-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #4ade80;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #0a0a0a;
+    color: #0a0a0a;
+    font-size: 20px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #cccccc;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #1e40af;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #b0b0b0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.skill-badge {
+    background: rgba(30, 64, 175, 0.1);
+    border: 1px solid #1e40af;
+    color: #1e40af;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: #1e40af;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.scroll-down {
+    animation: bounce 2s infinite;
+    color: #4ade80;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Background elements */
+.bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.1;
+}
+
+.code-text {
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.code-text:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.code-text:nth-child(2) {
+    top: 20%;
+    right: 15%;
+}
+
+.code-text:nth-child(3) {
+    bottom: 30%;
+    left: 5%;
+}
+
+.code-text:nth-child(4) {
+    bottom: 20%;
+    right: 10%;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1e40af;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #cccccc;
+}
+
+/* Work Section */
+.work {
+    background: #111111;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #1e40af;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h4 {
+    padding: 20px 20px 10px;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.project-card p {
+    padding: 0 20px 20px;
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    padding: 0 20px 20px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: rgba(30, 64, 175, 0.1);
+    border-color: #1e40af;
+    color: #1e40af;
+    transform: translateY(-2px);
+}
+
+.project-link i {
+    font-size: 0.9rem;
+}
+
+/* Services Section */
+.services {
+    background: #0a0a0a;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #4ade80;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.2);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #1e40af, #1e3a8a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #0a0a0a;
+}
+
+.service-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.service-card p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact {
+    background: #111111;
+    text-align: center;
+}
+
+.contact-description {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #b0b0b0;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.social-link:hover {
+    background: rgba(30, 64, 175, 0.1);
+    border-color: #1e40af;
+    color: #1e40af;
+    transform: translateY(-3px);
+}
+
+.social-link i:first-child {
+    font-size: 1.3rem;
+    width: 20px;
+}
+
+.social-link i:last-child {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .code-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .skills {
+        gap: 10px;
+    }
+    
+    .skill-badge {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e40af;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
